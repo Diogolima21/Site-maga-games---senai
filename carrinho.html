@@ -6,18 +6,27 @@
 		<meta name="keywords" content="XBOX, PS, PlayStation, PC, Atari">
 		<meta name="author" content="Estudantes SENAI - SBO">
 		<meta name="viewport" content="Width=device-with, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilo (1).css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <head>
-            <nav id="menu">
-                <ul class="menu">
-                <a class="linkMenu" href="index.html">Inicio</a>
-                <a class="linkMenu" href="games.html">Games</a>
-                <a class="linkMenu" href="promocoes.html">Promoções</a>
-                <a class="linkMenu" href="carrinho.html">Carrinho</a>
-                <a class="linkMenu" href="contatos.html">Contatos</a>
-                </ul><br>
-
+        <div class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="promocoes.html">Promoções</a>
+            
+            <div class="dropdown">
+              <button class="dropbtn" onclick="menu()">Games
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="playstation.html">PlayStation</a>
+                <a href="xbox.html">XBox</a>
+                <a href="pc.html">PC</a>
+              </div>
+            </div>
+            <a href="carrinho.html">Carrinho</a> 
+            <a href="contatos.html">Contato</a> 
+          </div>        
         <img src="img/carrinho.png" width="150px" height="150px"></img>
         <h1>Carrinho de Compra</h1>
             <img src="img/pagamento01.JPG" width="30%" height="150px">
@@ -43,4 +52,5 @@
                 </div>
             </footer>
     </body>
+    <script type="text/javascript" src="js/scripts02.js"></script>
 </html>

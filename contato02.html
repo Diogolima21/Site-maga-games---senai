@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Meu primeiro site</title>
+		<link rel="icon" href="image/banner-home.png" type="image/jpg" sizes="16x16">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">          
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	
+	<body>
+    <img class="img-logo" src="image/logosenai.jpg">
+
+    <div class="navbar">
+      <a href="index.html">Inicio</a>
+      <a href="ofertas.html">Ofertas</a>
+      
+      <div class="dropdown">
+        <button class="dropbtn" onclick="menu()">Jogos
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="playstation.html">PlayStation</a>
+          <a href="xbox.html">XBox</a>
+          <a href="pc.html">PC</a>
+        </div>
+      </div>
+      <a href="hardware.html">Hardware</a> 
+      <a href="contato.html">Contato</a> 
+    </div>
+   
+    <form name="formulario">
+      <h2>Entre em contato conosco</h2>  
+      <label for="nome">Nome</label>
+      <input type="text" id="nomeid"/>
+      <br>
+      <label for="fone">Fone</label>
+      <input type="tel" id="foneid"/>
+      <br>
+      <label for="email">Email</label>
+      <input type="email" id="emailid"/>
+      <br>    
+      <textarea placeholder="Deixe sua opnião."></textarea>
+      <br>
+      <input type="submit" class="enviar" onclick="enviar();" value="Enviar" />
+    </form>    
+
+</body>
+
+<!-- Tag Scripts  -->
+<script type="text/javascript" src="js/scripts.js"></script>
+</html>
