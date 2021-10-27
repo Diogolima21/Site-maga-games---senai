@@ -1,5 +1,5 @@
 body{
-    background-color: beige;
+    background-color: rgb(199, 223, 197);
 }
 
 footer{
@@ -33,14 +33,14 @@ footer{
 /* CSS do Menu */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color:black;
     font-family: Arial, Helvetica, sans-serif;
   }
   
   .navbar a {
     float: left;
     font-size: 16px;
-    color: white;
+    color:yellow;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -56,7 +56,7 @@ footer{
     font-size: 16px;  
     border: none;
     outline: none;
-    color: white;
+    color:yellow;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -64,13 +64,13 @@ footer{
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: red;
+    background-color: rgb(80, 80, 238);
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: black;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -78,7 +78,7 @@ footer{
   
   .dropdown-content a {
     float: none;
-    color: black;
+    color: yellow;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -86,7 +86,7 @@ footer{
   }
   
   .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color:black;
   }
   
   .show {
@@ -105,15 +105,15 @@ footer{
 }
 
 input:hover, textarea:hover, input:focus, textarea:focus {
-    border-color: #000066;
-    box-shadow: 5px 0px 9px #FFFF00;
-    background-color: rgba(141, 13, 13, 0.383);
+    border-color: black;
+    box-shadow: 5px 0px 9px black;
+    background-color: rgb(166, 213, 231);
     color: black;
     font-weight: bold;
 }
 
 .enviar {
-    background-color: red;
+    background-color: yellow;
     height: 40px;
     width: 100px;
     font-weight: bold;
@@ -132,7 +132,8 @@ textarea {
 }
 
 form label {
+    font-family: Arial, Helvetica, sans-serif;
     margin-left: 20px;
     color: black;
-    font-weight: bold;
+    font-weight: bolder;
 }
