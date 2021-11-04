@@ -9,6 +9,16 @@
 		<meta name="viewport" content="Width=device-with, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/estilo (1).css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $("#flip").click(function () {
+                    $("#panel").slideToggle("slow");
+                });
+            });
+        </script>
+
     </head>
     <body>
         <div class="navbar">
@@ -26,67 +36,101 @@
               </div>
             </div>
             <a href="carrinho.html">Carrinho</a> 
-            <a href="contatos.html">Contato</a> 
+            <a href="contatos.html">Contato</a>
+            <img src="img/face.png" width="30px" height="30px">
         </div>
+    </div>
+
+	<div id="flip">Clique aqui!!!</div>
+	<div id="panel">Seja bem vindo gamer!
+		<img src="img/0015rb.png" style="width: 15%">
+	</div>
+    <br>
+
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="img/carrosel 01.jfif" style="width:100%">			
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="img/carrosel 02.jfif" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="img/games02.JPG" style="width: 100%">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+	</div>
         <div class="container-fluid">
             <div class= "row">
                 <div class= "col-8" style= "background-color: white";>
                     <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: black;">Banner</h3>
-                    <img style="border:3px solid white" align="center" src="img/banner.jpg"  width="100%" height="300";>
-                    <figcaption style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: black;">Banner Promocional</figcaption> 
-                </div>
-            </div>
-        </div>
-            <div class="container-fluid">
-                <div class= "row">
-                    <div class= "col-12" style="background-color: black";>
-                        <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;">Novidades GAMES Funko Clube:</h4>
-                        <img style="border:3px solid white" src= "img/funko clube.png" width="60%" height="150">
-                            <p style= "font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;"><strong>Compre Funkos…Ganhe Funkos!</strong><br>           
-                                A cada 01 Funko POP comprado diretamente no site <em>mega games.com.br</em><br> 
-                                Você ganha 1 selo GG Funko Clube e a cada meta de selos alcançada conforme nosso cartão Fidelidade, você ganhará produtos Funko<br>
-                                A partir do 3º selo acumulado você já ganhará o primeiro prêmio Funko.
-                                Alguns Funkos POP tem pontuação bonificada, conforme exemplos:
-                                -Funko POP Moments, Rides ou Supersized e Funko POP do mês: 2 selos;
-                                -6 Funkos POP ou mais, em um único pedido: o dobro de Selos.
-                                Premiação conforme acúmulo de Selos GG Funko Clube:
-                                3º Selo: 01 Produto Surpresa Funko;
-                                6º Selo: 01 Funko Mystery Box;
-                                9° Selo: 01 Camiseta Funko POP;
-                                12º Selo: 01 Funko POP Regular em estoque à escolha (valor máximo R$ 130).
-                                Após finalizar uma cartela de selos, você poderá iniciar uma nova cartela.<br>
-                                <strong> Frete de envio dos itens promocionais do Clube será por conta do cliente</strong>, ou poderemos enviar no mesmo frete de algum novo pedido do cliente, neste caso sem nenhum custo a mais de frete para o cliente.
-                                Nós reservamos no direito de alterarmos os termos da premiação do Funko Clube e qualquer outra informação quando se fizer necessário.</em>
-                            </p>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-4" style="background-color: white";>
-                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><strong> Seja um afiliado Funko Clube:</strong></p>
-                        <img src="img/funko 01.png" width="200px" height="80" >
-                    </div>
-                    <div class="col-4" style="background-color: white";>
-                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><strong>Melhores marcas de jogos:</strong></p>
-                        <img src="img/capcom..png" width="130px" height="80";>
-                        <img src="img/ea..png" width="130px" height="60";>
-                    </div>
-                    <div class="col-4" style="background-color: white";>
-                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><strong>Melhores marcas de consoles: </strong></p>
-                        <img src="img/ps5..jpg" width="120px" height="100px">
-                        <img src="img/xboxconsole.png" width="120px" height="130"> 
-                    </div>
-                </div>
-            </div>
-                <footer>
-                    <div style="float:left";>
-                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: black";>Autor: Diogo Lima - Estudante FRONT-END SENAI - S.B.O - SP</p>
-                    </div>
-                        <div style="float:right";>
-                            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: black";>Outubro de 2021</p>
+                    <img style="border:3px solid white" src="img/banner.jpg"  width="100%" height="350";>                    
+                    <div class="container-fluid">
+                        <div class= "row">
+                            <div class= "col-12" style="background-color: black";>
+                                <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;">Novidades GAMES Funko Clube:</h4>
+                                <img style="border:3px solid white" src= "img/funko clube.png" width="60%" height="150">
+                                    <p style= "font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;"><strong>Compre Funkos…Ganhe Funkos!</strong>           
+                                        A cada 01 Funko POP comprado diretamente no site <em>mega games.com.br</em><br> 
+                                        Você ganha 1 selo GG Funko Clube e a cada meta de selos alcançada conforme nosso cartão Fidelidade, você ganhará produtos Funko<br>
+                                        A partir do 3º selo acumulado você já ganhará o primeiro prêmio Funko.
+                                        Alguns Funkos POP tem pontuação bonificada, conforme exemplos:
+                                        -Funko POP Moments, Rides ou Supersized e Funko POP do mês: 2 selos;
+                                        -6 Funkos POP ou mais, em um único pedido: o dobro de Selos.
+                                        Premiação conforme acúmulo de Selos GG Funko Clube:
+                                        3º Selo: 01 Produto Surpresa Funko;
+                                        6º Selo: 01 Funko Mystery Box;
+                                        9° Selo: 01 Camiseta Funko POP;
+                                        12º Selo: 01 Funko POP Regular em estoque à escolha (valor máximo R$ 130).
+                                        Após finalizar uma cartela de selos, você poderá iniciar uma nova cartela.<br>
+                                        <strong> Frete de envio dos itens promocionais do Clube será por conta do cliente</strong>, ou poderemos enviar no mesmo frete de algum novo pedido do cliente, neste caso sem nenhum custo a mais de frete para o cliente.
+                                        Nós reservamos no direito de alterarmos os termos da premiação do Funko Clube e qualquer outra informação quando se fizer necessário.</em>
+                                    </p>
+                                    <div class="col-4" style="background-color: white";>
+                                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><strong> Seja um afiliado Funko Clube:</strong></p>
+                                        <img src="img/funko 01.png" width="200px" height="80">
+                                        <div class="col-4" style="background-color: white";>
+                                            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><strong>Melhores marcas de jogos:</strong></p>
+                                            <img src="img/capcom..png" width="130px" height="80";>
+                                            <img src="img/ea01.png" width="130px" height="60";>
+                                            <img src="img/proevolu.png" width="130px" height="60";>
+                                            <img src="img/modelo-de-logotipo-de-desenho-de-monstro-de-olho_142351-69.jpg" width="180px" height="80";>                     
+                                            <div style="background-color: white";>
+                                            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><strong>Melhores marcas de consoles: </strong></p>
+                                            <img src="img/ps.png" width="30%" height="30%">
+                                            <img src="img/xbox-one.png" width="13%" height="13%">
+                                            <img src="img/ps5,2.png" width="17%" height="17%">
+                                        </div>
+                                    </div>          
+                            </div>
                         </div>
-                </footer>    
+                    </div>          
+                </div>                
+            </div>
+        </div>                      
+            <footer>
+                <div style="float:left";>
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: black";>Autor: Diogo Lima - Estudante FRONT-END SENAI - S.B.O - SP</p>
+                </div>
+                    <div style="float:right";>
+                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: black";>Outubro de 2021</p>
+                    </div>
+            </footer>    
         </div>        
     </body>
     <script type="text/javascript" src="js/scripts02.js"></script>
